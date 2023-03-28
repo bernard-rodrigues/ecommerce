@@ -1,0 +1,62 @@
+{
+    "categories": [
+        "Ofertas do Dia",
+        "Celulares",
+        "Informática",
+        "TV e Vídeo",
+        "Eletrodomésticos",
+        "Games",
+        "Casa Inteligente",
+        "Acessórios"
+    ],
+    "products": [
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 4,
+            "evaluations": 370,
+            "price": 9476.99
+        },
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 3,
+            "evaluations": 27,
+            "price": 9999.99
+        },
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 4,
+            "evaluations": 22,
+            "price": 86.99
+        },
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 5,
+            "evaluations": 30,
+            "price": 5516.99
+        },
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 1,
+            "evaluations": 70,
+            "price": 4476.99
+        },
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 3,
+            "evaluations": 440,
+            "price": 455.99
+        },
+        {
+            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "rating": 5,
+            "evaluations": 370,
+            "price": 871.89
+        },
+        {
+            "description": "Bacon ipsum dolor amet boudin chicken tenderloin capicola.",
+            "rating": 4,
+            "evaluations": 125,
+            "price": 1281.99
+        }
+    ]
+}
