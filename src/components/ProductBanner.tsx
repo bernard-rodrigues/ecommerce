@@ -14,10 +14,10 @@ export function ProductBanner(props: ProductBannerProps){
     const product: Product = products.filter((object => object.id === props.id))[0]
 
     return(
-        <Link to={`product/${product.id}`} className="w-[242px] h-[480px]">
+        <Link to={`/product/${product.id}`} className="w-[242px] h-[480px]">
             <img className="w-[242px] h-[242px]" src={product.imgUrl[0]} alt="Imagem randômica" />
             
-            <p className="my-2">{product.description}</p>
+            <p className="my-2">{product.title}</p>
             
             <div className="flex items-center my-2">
                 {Array.from({length: product.rating}, (_, i) => i).map(emptyStar => (

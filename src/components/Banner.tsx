@@ -23,8 +23,13 @@ export function Banner(){
         }
     }, [time])
 
-    const handleBanner = (amount: number) => {
-        if(currentBanner + amount === banners.length){
+    const handleBanner = (amount: number, skip=false) => {
+        if(skip){
+            setCurrentBanner(amount)
+            setTime(0)
+            bannerDiv.current ? bannerDiv.current.scroll({left: 1200*amount, top: 0, behavior: 'smooth'}) : ""
+        }
+        else if(currentBanner + amount === banners.length){
             setCurrentBanner(0)
             setTime(0)
             bannerDiv.current ? bannerDiv.current.scrollBy({left: -1200*(banners.length - 1), top: 0, behavior: 'smooth'}) : ""
@@ -43,7 +48,8 @@ export function Banner(){
         <div className="h-[20rem] relative">
             <img 
                 className="
-                    absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 hover:cursor-pointer
+                    absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 
+                    hover:cursor-pointer hover:bg-zinc-100
                     border border-zinc-300 bg-white p-1 rounded
                 " 
                 src={arrowLeft} 
@@ -52,7 +58,8 @@ export function Banner(){
             />
             <img 
                 className="
-                    absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 w-8 hover:cursor-pointer
+                    absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 w-8
+                    hover:cursor-pointer hover:bg-zinc-100
                     border border-zinc-300 bg-white p-1 rounded
                 " 
                 src={arrowRight}
@@ -69,8 +76,9 @@ export function Banner(){
                 {banners.map((_, index) => (
                     <div 
                         key={index} 
-                        className="w-4 h-4 rounded-full border border-white"
+                        className="w-4 h-4 rounded-full border border-white hover:cursor-pointer"
                         style={index === currentBanner ? {backgroundColor: 'white'} : {backgroundColor: '#ffffff40'}}
+                        onClick={() => handleBanner(index, true)}
                     />
                 ))}
             </div>

@@ -50,10 +50,11 @@
     "products": [
         {
             "id": 0,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo eros eu quam interdum, eget.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo eros eu quam interdum, eget.",
             "rating": 4,
             "evaluations": 370,
             "price": 1000.00,
+            "categories": [0, 2],
             "imgUrl": [
                 "https://picsum.photos/id/1/600/600",
                 "https://picsum.photos/id/2/600/600",
@@ -65,10 +66,11 @@
         },
         {
             "id": 1,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla finibus est vehicula auctor. Aliquam.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla finibus est vehicula auctor. Aliquam.",
             "rating": 3,
             "evaluations": 27,
             "price": 9999.99,
+            "categories": [1],
             "imgUrl": [
                 "https://picsum.photos/id/7/600/600",
                 "https://picsum.photos/id/8/600/600",
@@ -80,10 +82,11 @@
         },
         {
             "id": 2,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim vehicula arcu, at hendrerit lacus.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim vehicula arcu, at hendrerit lacus.",
             "rating": 4,
             "evaluations": 22,
             "price": 86.99,
+            "categories": [4, 5],
             "imgUrl": [
                 "https://picsum.photos/id/13/600/600",
                 "https://picsum.photos/id/14/600/600",
@@ -95,10 +98,11 @@
         },
         {
             "id": 3,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mi lectus. Suspendisse et est.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mi lectus. Suspendisse et est.",
             "rating": 5,
             "evaluations": 30,
             "price": 5516.99,
+            "categories": [0, 6],
             "imgUrl": [
                 "https://picsum.photos/id/19/600/600",
                 "https://picsum.photos/id/20/600/600",
@@ -110,10 +114,11 @@
         },
         {
             "id": 4,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie elit eget nisi aliquam ornare.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie elit eget nisi aliquam ornare.",
             "rating": 3,
             "evaluations": 70,
             "price": 4476.99,
+            "categories": [2, 5],
             "imgUrl": [
                 "https://picsum.photos/id/25/600/600",
                 "https://picsum.photos/id/26/600/600",
@@ -125,10 +130,11 @@
         },
         {
             "id": 5,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ultricies nibh. In ultrices eu.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ultricies nibh. In ultrices eu.",
             "rating": 3,
             "evaluations": 440,
             "price": 455.99,
+            "categories": [4],
             "imgUrl": [
                 "https://picsum.photos/id/31/600/600",
                 "https://picsum.photos/id/32/600/600",
@@ -140,10 +146,11 @@
         },
         {
             "id": 6,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 5,
             "evaluations": 370,
             "price": 871.89,
+            "categories": [1, 5, 7],
             "imgUrl": [
                 "https://picsum.photos/id/38/600/600",
                 "https://picsum.photos/id/39/600/600",
@@ -155,10 +162,11 @@
         },
         {
             "id": 7,
-            "description": "Bacon ipsum dolor amet boudin chicken tenderloin capicola.",
+            "title": "Bacon ipsum dolor amet boudin chicken tenderloin capicola.",
             "rating": 4,
             "evaluations": 125,
             "price": 1281.99,
+            "categories": [3],
             "imgUrl": [
                 "https://picsum.photos/id/44/600/600",
                 "https://picsum.photos/id/45/600/600",
@@ -170,10 +178,11 @@
         },
         {
             "id": 8,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 4,
             "evaluations": 18,
             "price": 1899.89,
+            "categories": [0, 2, 3],
             "imgUrl": [
                 "https://picsum.photos/id/50/600/600",
                 "https://picsum.photos/id/51/600/600",
@@ -185,10 +194,11 @@
         },
         {
             "id": 9,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 3,
             "evaluations": 159,
             "price": 3000.89,
+            "categories": [1, 7],
             "imgUrl": [
                 "https://picsum.photos/id/56/600/600",
                 "https://picsum.photos/id/57/600/600",
@@ -200,10 +210,11 @@
         },
         {
             "id": 10,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 5,
             "evaluations": 170,
             "price": 976.89,
+            "categories": [5, 6],
             "imgUrl": [
                 "https://picsum.photos/id/62/600/600",
                 "https://picsum.photos/id/63/600/600",
@@ -215,10 +226,11 @@
         },
         {
             "id": 11,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 4,
             "evaluations": 1897,
             "price": 8710.09,
+            "categories": [1, 2],
             "imgUrl": [
                 "https://picsum.photos/id/68/600/600",
                 "https://picsum.photos/id/69/600/600",
@@ -230,10 +242,11 @@
         },
         {
             "id": 12,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 4,
             "evaluations": 102,
             "price": 2000.00,
+            "categories": [3, 6],
             "imgUrl": [
                 "https://picsum.photos/id/74/600/600",
                 "https://picsum.photos/id/75/600/600",
@@ -245,10 +258,11 @@
         },
         {
             "id": 13,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 2,
             "evaluations": 13,
             "price": 2971.89,
+            "categories": [5, 7],
             "imgUrl": [
                 "https://picsum.photos/id/80/600/600",
                 "https://picsum.photos/id/81/600/600",
@@ -260,10 +274,11 @@
         },
         {
             "id": 14,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 1,
             "evaluations": 102,
             "price": 1870.89,
+            "categories": [1, 7],
             "imgUrl": [
                 "https://picsum.photos/id/98/600/600",
                 "https://picsum.photos/id/99/600/600",
@@ -275,10 +290,11 @@
         },
         {
             "id": 15,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 0,
             "evaluations": 0,
             "price": 10150.99,
+            "categories": [0, 4],
             "imgUrl": [
                 "https://picsum.photos/id/92/600/600",
                 "https://picsum.photos/id/93/600/600",
@@ -288,6 +304,5 @@
                 "https://picsum.photos/id/97/600/600"
             ]
         }
-    ],
-    "featured": [0, 1, 2, 3, 4, 5, 6, 7]
+    ]
 }

@@ -2,11 +2,12 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 
 export interface Product{
     id: number,
-    description: string,
+    title: string,
     rating: number,
     evaluations: number,
     price: number,
-    imgUrl: string[]
+    imgUrl: string[],
+    categories: number[]
 }
 
 interface Banner{
@@ -21,7 +22,6 @@ interface Category{
 
 interface EcommerceDataProps{
     categories: Category[]
-    featured: number[]
     products: Product[]
     banners: Banner[]
 }
@@ -34,7 +34,7 @@ interface EcommerceDataProviderProps{
 
 export function EcommerceDataProvider(props: EcommerceDataProviderProps){
     const [categories, setCategories] = useState<Category[]>([])
-    const [featured, setFeatured] = useState<number[]>([])
+    // const [featured, setFeatured] = useState<number[]>([])
     const [products, setProducts] = useState<Product[]>([])
     const [banners, setBanners] = useState<Banner[]>([])
 
@@ -44,7 +44,7 @@ export function EcommerceDataProvider(props: EcommerceDataProviderProps){
             .then(response => response.json())
             .then(data => {
                 setCategories(data.categories)
-                setFeatured(data.featured)
+                // setFeatured(data.featured)
                 setProducts(data.products)
                 setBanners(data.banners)
             })
@@ -55,7 +55,7 @@ export function EcommerceDataProvider(props: EcommerceDataProviderProps){
             value={
                 {
                     categories, 
-                    featured, 
+                    // featured, 
                     products,
                     banners
                 }
