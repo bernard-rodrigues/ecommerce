@@ -3,7 +3,7 @@ import arrowLeft from '../assets/arrow-left.svg'
 import arrowRight from '../assets/arrow-right.svg'
 import { useEcommerceData } from '../contexts/EcomerceData'
 
-export function Banner(){
+export const Banner = () => {
     const [time, setTime] = useState(0)
     const [currentBanner, setCurrentBanner] = useState(0)
 

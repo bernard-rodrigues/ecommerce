@@ -3,7 +3,7 @@ import magnifyngGlass from '../assets/magnifying-glass.svg'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export function Header(){
+export const Header = () => {
     const [user, setUser] = useState('')
     
     return(

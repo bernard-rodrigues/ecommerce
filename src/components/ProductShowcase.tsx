@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { Product } from "../contexts/EcomerceData"
+import { locateBrValue } from "../utils/ecommerceUtils"
 
 interface ProductShowcaseProps{
     product: Product
 }
 
-export function ProductShowcase({product}: ProductShowcaseProps){
+export const ProductShowcase = ({product}: ProductShowcaseProps) => {
     const [currentImage, setCurrentImage] = useState(0)
     
     const handleProductImage = (value: number) => {
@@ -35,8 +36,8 @@ export function ProductShowcase({product}: ProductShowcaseProps){
             <div className="h-[500px] w-[550px] flex flex-col justify-between">
                 <p className="text-5xl font-[700]">{product.title}</p>
                 <div>
-                    <h2 className="text-4xl font-[700]"><span className="text-2xl font-[400]">Por: </span>R${product.price}</h2>
-                    <p>em até 10x de R${(product.price/10).toFixed(2)}</p>
+                    <h2 className="text-4xl font-[700]"><span className="text-2xl font-[400]">Por: </span>R${locateBrValue(product.price)}</h2>
+                    <p>em até 10x de R${locateBrValue(Number((product.price/10).toFixed(2)))}</p>
                 </div>
                 <div className="flex gap-2 items-center">
                     <label>Calcular frete:</label>

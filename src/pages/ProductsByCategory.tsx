@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { ProductBanner } from "../components/ProductBanner"
 import { useEcommerceData } from "../contexts/EcomerceData"
 
-export function ProductsByCategory(){
+export const ProductsByCategory = () => {
     const params = useParams()
     const {products, categories} = useEcommerceData()
 

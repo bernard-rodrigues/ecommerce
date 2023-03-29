@@ -1,7 +1,7 @@
 import { Banner } from "../components/Banner";
 import { Featured } from "../components/Featured";
 
-export function Home(){
+export const Home = () =>{
     return(
         <>
             <Banner />

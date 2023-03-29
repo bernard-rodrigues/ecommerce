@@ -2,7 +2,7 @@ import {useParams} from 'react-router';
 import { ProductShowcase } from '../components/ProductShowcase';
 import { useEcommerceData } from '../contexts/EcomerceData';
 
-export function ProductPage(){
+export const ProductPage = () => {
     const params = useParams()
 
     const {products} = useEcommerceData()

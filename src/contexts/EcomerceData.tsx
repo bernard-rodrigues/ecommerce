@@ -32,7 +32,7 @@ interface EcommerceDataProviderProps{
     children: ReactNode
 }
 
-export function EcommerceDataProvider(props: EcommerceDataProviderProps){
+export const EcommerceDataProvider = (props: EcommerceDataProviderProps) => {
     const [categories, setCategories] = useState<Category[]>([])
     // const [featured, setFeatured] = useState<number[]>([])
     const [products, setProducts] = useState<Product[]>([])

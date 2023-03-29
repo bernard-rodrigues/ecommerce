@@ -2,13 +2,13 @@ import star from '../assets/star.svg'
 import starFilled from '../assets/star-filled.svg'
 import { Product, useEcommerceData } from '../contexts/EcomerceData'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { locateBrValue } from '../utils/ecommerceUtils'
 
 interface ProductBannerProps{
     id: number
 }
 
-export function ProductBanner(props: ProductBannerProps){
+export const ProductBanner = (props: ProductBannerProps) => {
     const {products} = useEcommerceData()
 
     const product: Product = products.filter((object => object.id === props.id))[0]
@@ -29,8 +29,8 @@ export function ProductBanner(props: ProductBannerProps){
                 <span className="ml-2">({product.evaluations})</span>
             </div>
 
-            <h3 className="text-3xl font-[700]"><span className="text-lg">Por: </span>R${product.price}</h3>
-            <p className="text-sm">ou em até <span>10x</span> de {(product.price/10).toFixed(2)} sem juros</p>
+            <h3 className="text-3xl font-[700]"><span className="text-lg">Por: </span>R${locateBrValue(product.price)}</h3>
+            <p className="text-sm">ou em até <span>10x</span> de {locateBrValue(Number((product.price/10).toFixed(2)))} sem juros</p>
         </Link>
     )
 }

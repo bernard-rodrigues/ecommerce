@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useEcommerceData } from "../contexts/EcomerceData"
 
-export function Categories(){
+export const Categories = () => {
     const {categories} = useEcommerceData()
     
     return (

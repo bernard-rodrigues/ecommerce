@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEcommerceData } from "../contexts/EcomerceData";
 import { ProductBanner } from "./ProductBanner";
 
-export function Featured(){
+export const Featured = () => {
     const {products} = useEcommerceData()
     const [load, setLoad] = useState(8)
 

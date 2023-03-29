@@ -7,7 +7,7 @@ import { Home } from "./pages/Home";
 import { ProductPage } from "./pages/ProductPage";
 import { ProductsByCategory } from "./pages/ProductsByCategory";
 
-export function App() { 
+export const App = () => { 
   return (
     <EcommerceDataProvider>
       <BrowserRouter>
