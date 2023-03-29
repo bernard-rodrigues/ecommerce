@@ -1,5 +1,4 @@
 export const locateBrValue = (value: number) => {
-    console.log(value)
     let locateValue = String(value).replace('.', ',')
     if(locateValue.split(',').length == 1){
         return locateValue + ',00'
