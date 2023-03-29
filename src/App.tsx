@@ -1,20 +1,27 @@
-import { Banner } from "./components/Banner";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Categories } from "./components/Categories";
-import { Featured } from "./components/Featured";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { EcommerceDataProvider } from "./contexts/EcomerceData";
+import { Home } from "./pages/Home";
+import { ProductPage } from "./pages/ProductPage";
 
-export function App() {
+export function App() { 
   return (
-    <>
+    <EcommerceDataProvider>
       <Header />
-      <Categories />
+      <Categories/>
       <main className="relative left-1/2 -translate-x-1/2 w-[1200px]">
-        <Banner />
-        <Featured />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product/:id" element={<ProductPage />} />
+          </Routes>
+        
+        </BrowserRouter>
       </main>
       <Footer />
-    </>
+    </EcommerceDataProvider>
   )
   
 }

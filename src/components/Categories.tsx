@@ -1,19 +1,13 @@
-import { useEffect, useState } from "react"
+import { useEcommerceData } from "../contexts/EcomerceData"
 
 export function Categories(){
-    const [categories, setCategories] = useState<string[]>([])
-    
-    useEffect(() => {
-        fetch('/ecommerce.json')
-            .then(response => response.json())
-            .then(data => setCategories(data.categories))
-    }, [])
+    const {categories} = useEcommerceData()
     
     return (
-        <section className="flex justify-center">
+        <nav className="flex justify-center">
             {categories.map(category => (
-                <a className="border py-2 px-4" key={category}>{category}</a>
+                <a href="#" className="border py-2 px-4 hover:bg-zinc-100" key={category}>{category}</a>
             ))}
-        </section>
+        </nav>
     )
 }

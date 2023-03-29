@@ -1,4 +1,18 @@
 {
+    "banners": [
+        {
+            "imgUrl": "https://picsum.photos/id/420/1200/320",
+            "alt": "Banner 1"
+        },
+        {
+            "imgUrl": "https://picsum.photos/id/360/1200/320",
+            "alt": "Banner 2"
+        },
+        {
+            "imgUrl": "https://picsum.photos/id/180/1200/320",
+            "alt": "Banner 3"
+        }
+    ],
     "categories": [
         "Ofertas do Dia",
         "Celulares",
@@ -11,52 +25,69 @@
     ],
     "products": [
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "id": 0,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo eros eu quam interdum, eget.",
             "rating": 4,
             "evaluations": 370,
-            "price": 9476.99
+            "price": 1000.00,
+            "imgUrl": "https://picsum.photos/id/1/480/480"
         },
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "id": 1,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla finibus est vehicula auctor. Aliquam.",
             "rating": 3,
             "evaluations": 27,
-            "price": 9999.99
+            "price": 9999.99,
+            "imgUrl": "https://picsum.photos/id/2/480/480"
         },
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "id": 2,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim vehicula arcu, at hendrerit lacus.",
             "rating": 4,
             "evaluations": 22,
-            "price": 86.99
+            "price": 86.99,
+            "imgUrl": "https://picsum.photos/id/3/480/480"
         },
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "id": 3,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mi lectus. Suspendisse et est.",
             "rating": 5,
             "evaluations": 30,
-            "price": 5516.99
+            "price": 5516.99,
+            "imgUrl": "https://picsum.photos/id/4/480/480"
         },
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
-            "rating": 1,
+            "id": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie elit eget nisi aliquam ornare.",
+            "rating": 3,
             "evaluations": 70,
-            "price": 4476.99
+            "price": 4476.99,
+            "imgUrl": "https://picsum.photos/id/5/480/480"
         },
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "id": 5,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ultricies nibh. In ultrices eu.",
             "rating": 3,
             "evaluations": 440,
-            "price": 455.99
+            "price": 455.99,
+            "imgUrl": "https://picsum.photos/id/6/480/480"
         },
         {
-            "description": "Bacon ipsum dolor amet ham capicola prosciutto frankfurter shoulder short loin, porchetta sirloin chicken meatloaf ribeye tongue shankle.",
+            "id": 6,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac quam non augue suscipit lacinia.",
             "rating": 5,
             "evaluations": 370,
-            "price": 871.89
+            "price": 871.89,
+            "imgUrl": "https://picsum.photos/id/7/480/480"
         },
         {
+            "id": 7,
             "description": "Bacon ipsum dolor amet boudin chicken tenderloin capicola.",
             "rating": 4,
             "evaluations": 125,
-            "price": 1281.99
+            "price": 1281.99,
+            "imgUrl": "https://picsum.photos/id/8/480/480"
         }
-    ]
+    ],
+    "featured": [0, 1, 2, 3, 4, 5, 6, 7]
 }
