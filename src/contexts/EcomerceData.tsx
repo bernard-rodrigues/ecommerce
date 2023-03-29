@@ -6,7 +6,7 @@ export interface Product{
     rating: number,
     evaluations: number,
     price: number,
-    imgUrl: string
+    imgUrl: string[]
 }
 
 interface Banner{
@@ -14,8 +14,13 @@ interface Banner{
     alt: string
 }
 
+interface Category{
+    id: number,
+    name: string
+}
+
 interface EcommerceDataProps{
-    categories: string[]
+    categories: Category[]
     featured: number[]
     products: Product[]
     banners: Banner[]
@@ -28,7 +33,7 @@ interface EcommerceDataProviderProps{
 }
 
 export function EcommerceDataProvider(props: EcommerceDataProviderProps){
-    const [categories, setCategories] = useState<string[]>([])
+    const [categories, setCategories] = useState<Category[]>([])
     const [featured, setFeatured] = useState<number[]>([])
     const [products, setProducts] = useState<Product[]>([])
     const [banners, setBanners] = useState<Banner[]>([])
